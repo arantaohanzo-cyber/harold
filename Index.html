@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harold Epit PIA | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b1120;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #111c31;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 85px 10%;
+}
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.home-text {
+    max-width: 550px;
+}
+
+.home-text h3 {
+    color: #38bdf8;
+    font-size: 22px;
+}
+
+.home-text h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.home-text p {
+    color: #b8c4d6;
+    line-height: 1.8;
+}
+
+.profile {
+    width: 270px;
+    height: 270px;
+    border: 5px solid #38bdf8;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #1e293b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 35px #0ea5e955;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile span {
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #38bdf8;
+    color: #07111f;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.heading {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.heading span {
+    color: #38bdf8;
+}
+
+.about {
+    background: #111c31;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #cbd5e1;
+    line-height: 2;
+    font-size: 17px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background: #17243a;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #263b56;
+    transition: .3s;
+}
+
+.skill:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+.skill h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.skill p {
+    color: #b8c4d6;
+}
+
+.contact {
+    background: #111c31;
+    text-align: center;
+}
+
+.contact p {
+    margin: 18px;
+    color: #cbd5e1;
+}
+
+.contact a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    background: #080e19;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .home {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 36px;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">HAROLD.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="home-text">
+        <h3>Hello, Welcome to My Portfolio!</h3>
+        <h1>I'm Harold Epit PIA</h1>
+        <p>
+            A motivated, responsible, and hardworking individual
+            who is always willing to learn new things, improve my
+            abilities, and take on new challenges.
+        </p>
+        <a href="#about" class="btn">Discover More</a>
+    </div>
+
+    <!-- PALITAN ANG profile.jpg NG PANGALAN NG PICTURE MO -->
+    <div class="profile">
+        <img src="profile.jpg" alt="Harold Profile"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span style="display:none;">Your Profile Photo</span>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+    <p>
+        My name is Harold Epit PIA. I am a dedicated and
+        hardworking individual who believes that learning and
+        determination are important keys to success.
+        I enjoy discovering new skills, solving problems,
+        and improving myself. I am reliable, responsible,
+        and committed to doing my best in every task.
+        My goal is to continue growing personally and
+        professionally while gaining new experiences.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="skills-container">
+        <div class="skill">
+            <h3>Time Management</h3>
+            <p>Managing time wisely and completing tasks on schedule.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Problem Solving</h3>
+            <p>Finding solutions and handling challenges effectively.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Reliable</h3>
+            <p>Being dependable and committed to assigned responsibilities.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Responsible</h3>
+            <p>Taking ownership of tasks and completing them properly.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Hardworking</h3>
+            <p>Showing dedication and giving my best in every task.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Willingness to Learn</h3>
+            <p>Always open to learning new knowledge and developing skills.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <p><strong>Name:</strong> Harold Epit PIA</p>
+    <p><strong>Gmail:</strong>
+        <a href="mailto:haroldepitpia@gmail.com">
+        haroldepitpia@gmail.com</a>
+    </p>
+    <p><strong>Phone:</strong>
+        <a href="tel:097509736628">097509736628</a>
+    </p>
+
+    <a href="mailto:haroldepitpia@gmail.com" class="btn">
+        Send Me an Email
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Harold Epit PIA | Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
